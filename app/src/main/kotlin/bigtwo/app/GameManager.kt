@@ -212,7 +212,7 @@ class GameManager(
                 }
             }
             inputThread.start()
-            inputThread.join(150000) // 等待 15 秒
+            inputThread.join(15000) // 等待 15 秒
 
             if (inputThread.isAlive) {
                 inputThread.interrupt()
